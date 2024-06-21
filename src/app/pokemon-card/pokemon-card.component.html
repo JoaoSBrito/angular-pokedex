@@ -1,0 +1,9 @@
+<mat-card>
+  <img [src]="pokemonImage">
+  <mat-card-content>{{ capitalizeFirstLetter(pokemonName) }}</mat-card-content>
+  <div class="types">
+    <div *ngFor="let type of pokemonTypes">
+      <mat-card-subtitle [style.backgroundColor]="getBackgroundColor(type.type.name)">{{ capitalizeFirstLetter(type.type.name)}}</mat-card-subtitle>
+    </div>
+  </div>
+</mat-card>

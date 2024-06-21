@@ -8,6 +8,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { DataService } from './data.service';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { DataService } from './data.service';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    PokemonListComponent
+    PokemonListComponent,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,6 +1,11 @@
-<div *ngIf="pokemons">
-  <h3>Pokemons:</h3>
-  <ul>
-    <li *ngFor="let pokemon of pokemons">{{ pokemon.name }}</li>
-  </ul>
+<div *ngFor="let pokemon of pokemons">
+  <div class="pokemon-list">
+    <app-pokemon-card 
+      [pokemonName]="pokemon.name" 
+      [pokemonImage]="pokemon.sprites.front_default"
+      [pokemonTypes]="pokemon.types"
+      >
+      
+    </app-pokemon-card>
+  </div>
 </div>
